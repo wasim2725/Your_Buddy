@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallingUser">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/manImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/man"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/walkingBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connecting you to\nyour walking buddy..."
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/callingButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:layout_below="@+id/walkingBanner"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/phone_call"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/micButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/mic"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/videoButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/micButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/video_camera"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/endCall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/videoButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/end_call"/>
+    </RelativeLayout>
+</RelativeLayout>
